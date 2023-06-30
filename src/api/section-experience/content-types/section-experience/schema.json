@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "section_projects",
+  "collectionName": "section_experiences",
   "info": {
-    "singularName": "section-project",
-    "pluralName": "section-projects",
-    "displayName": "SectionProject",
-    "description": ""
+    "singularName": "section-experience",
+    "pluralName": "section-experiences",
+    "displayName": "SectionExperience"
   },
   "options": {
     "draftAndPublish": false
@@ -32,16 +31,7 @@
       },
       "type": "string"
     },
-    "description": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext"
-    },
-    "Project": {
-      "displayName": "Project",
+    "Experience": {
       "type": "component",
       "repeatable": true,
       "pluginOptions": {
@@ -49,7 +39,7 @@
           "localized": true
         }
       },
-      "component": "projects.project"
+      "component": "experiences.experience"
     }
   }
 }

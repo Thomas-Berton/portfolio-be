@@ -2,7 +2,8 @@
   "collectionName": "components_projects_projects",
   "info": {
     "displayName": "Project",
-    "icon": "book"
+    "icon": "book",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,16 +14,22 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "technologies": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::technologie.technologie"
+    },
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
     }
   }
 }
