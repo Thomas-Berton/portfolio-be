@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_testimonials",
+  "info": {
+    "singularName": "section-testimonial",
+    "pluralName": "section-testimonials",
+    "displayName": "SectionTestimonial"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "subtitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "tetimonial": {
+      "displayName": "Testimonial",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "testimonials.testimonial"
+    }
+  }
+}

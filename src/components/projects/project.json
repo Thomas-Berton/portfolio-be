@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_projects_projects",
+  "info": {
+    "displayName": "Project",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "technologies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::technologie.technologie"
+    }
+  }
+}
