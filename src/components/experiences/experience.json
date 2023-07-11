@@ -2,7 +2,8 @@
   "collectionName": "components_experiences_experiences",
   "info": {
     "displayName": "Experience",
-    "icon": "briefcase"
+    "icon": "briefcase",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,11 +17,12 @@
       "type": "string"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "icon_bg": {
       "type": "string"
@@ -30,6 +32,9 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "location": {
+      "type": "string"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "general",
     "pluralName": "generals",
-    "displayName": "General"
+    "displayName": "General",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -67,16 +68,25 @@
       "component": "socials.socials"
     },
     "profile_picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
       }
+    },
+    "footer_phrase": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

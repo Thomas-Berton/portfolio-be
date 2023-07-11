@@ -22,6 +22,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::article.article"
+    },
+    "color": {
+      "type": "string"
     }
   }
 }
