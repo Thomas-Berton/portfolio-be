@@ -58,6 +58,14 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "article"
+    },
+    "image_alt": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
     }
   }
 }
