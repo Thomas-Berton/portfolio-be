@@ -4,7 +4,8 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Article"
+    "displayName": "Article",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,27 +33,17 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
-    },
-    "Author": {
-      "displayName": "Author",
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "authors.author"
     },
     "content": {
       "pluginOptions": {
@@ -61,6 +52,12 @@
         }
       },
       "type": "richtext"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "article"
     }
   }
 }
