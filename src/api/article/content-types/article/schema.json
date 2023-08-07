@@ -55,9 +55,9 @@
     },
     "author": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "article"
+      "inversedBy": "articles"
     },
     "image_alt": {
       "pluginOptions": {
