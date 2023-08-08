@@ -59,13 +59,14 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "articles"
     },
-    "image_alt": {
+    "slug": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
-      "type": "string"
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }
