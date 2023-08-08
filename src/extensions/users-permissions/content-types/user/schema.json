@@ -75,9 +75,9 @@
     "job": {
       "type": "string"
     },
-    "article": {
+    "articles": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::article.article",
       "mappedBy": "author"
     }
