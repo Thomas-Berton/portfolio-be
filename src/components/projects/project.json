@@ -26,10 +26,8 @@
       "relation": "oneToMany",
       "target": "api::technologie.technologie"
     },
-    "article": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::article.article"
+    "link": {
+      "type": "string"
     }
   }
 }
